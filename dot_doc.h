@@ -1,18 +1,18 @@
 #ifndef dot_doc_decoder
 #define dot_doc_decoder
 
-#define CFB_minor_version3E			(ut_WORD) 0x003E // All .doc files use this minor version.
-#define CFB_major_version_3			(ut_WORD) 0x0003
-#define CFB_major_version_4			(ut_WORD) 0x0004
+#define CFB_minor_version3E		(ut_WORD) 0x003E // All .doc files use this minor version.
+#define CFB_major_version_3		(ut_WORD) 0x0003
+#define CFB_major_version_4		(ut_WORD) 0x0004
 #define little_endian_indication	(ut_WORD) 0xFFFE // FF FE represents little endian byte order. This applies to all DOC files
 #define sector_size_indication_512	(ut_WORD) 0x0009
-#define sector_size_indication_4096 (ut_WORD) 0x000C
-#define mini_sector_shift			(ut_WORD) 0x0006 // Sector size of the Mini Stream. Will always be 00 06
-#define free_sector					(ut_DWORD) 0xFFFFFFFF // Indication of free sectors
-#define end_of_chain				(ut_DWORD) 0xFFFFFFFE // "Chain terminators"
-#define fat_sect					(ut_DWORD) 0xFFFFFFFD // Sectors that contain storage for FAT sectors
-#define word_bin_file_indicator     (ut_WORD) 0xA5EC
-#define fib_version                 (ut_WORD) 0x00C1 // This should always be the value in the .doc/.docx binary file
+#define sector_size_indication_4096 	(ut_WORD) 0x000C
+#define mini_sector_shift		(ut_WORD) 0x0006 // Sector size of the Mini Stream. Will always be 00 06
+#define free_sector			(ut_DWORD) 0xFFFFFFFF // Indication of free sectors
+#define end_of_chain			(ut_DWORD) 0xFFFFFFFE // "Chain terminators"
+#define fat_sect			(ut_DWORD) 0xFFFFFFFD // Sectors that contain storage for FAT sectors
+#define word_bin_file_indicator     	(ut_WORD) 0xA5EC
+#define fib_version                 	(ut_WORD) 0x00C1 // This should always be the value in the .doc/.docx binary file
 
 
 /* CFB header signature. */
